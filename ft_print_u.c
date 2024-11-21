@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_u.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: didimitr <didimitr@student.42luxembourg    +#+  +:+       +#+        */
+/*   By: adimik <adimik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 11:40:24 by didimitr          #+#    #+#             */
-/*   Updated: 2024/11/20 11:40:43 by didimitr         ###   ########.fr       */
+/*   Updated: 2024/11/21 11:59:38 by adimik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,15 @@
 
 int	ft_print_u(unsigned int i)
 {
-	return(ft_print_d((long long)i));
+	int c;
+
+	c = 0;
+	if (i < 10)
+		c += ft_print_c(i + 48);
+	else
+	{
+		c += ft_print_u(i / 10);
+		c += ft_print_u(i % 10);
+	}
+	return(c);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: didimitr <didimitr@student.42luxembourg    +#+  +:+       +#+        */
+/*   By: adimik <adimik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 15:19:35 by didimitr          #+#    #+#             */
-/*   Updated: 2024/11/20 13:20:38 by didimitr         ###   ########.fr       */
+/*   Updated: 2024/11/21 13:22:45 by adimik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ int	ft_symbols(const char *c, va_list arg)
 	if(*c == 's')
 		return (ft_print_s(va_arg(arg, char *)));
 	if(*c == 'd' || *c == 'i')
-		return (ft_print_d(va_arg(arg, long)));
+		return (ft_print_d(va_arg(arg, int)));
 	if(*c == 'x')
-		return (ft_print_x(va_arg(arg, long)));
+		return (ft_print_x(va_arg(arg, unsigned int)));
 	if(*c == 'X')
-		return (ft_print_X(va_arg(arg, long)));
+		return (ft_print_X(va_arg(arg, unsigned int)));
 	if(*c == '%')
 		return (ft_print_c('%'));
 	if(*c == 'p')

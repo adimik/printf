@@ -3,20 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_d.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: didimitr <didimitr@student.42luxembourg    +#+  +:+       +#+        */
+/*   By: adimik <adimik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 11:31:28 by didimitr          #+#    #+#             */
-/*   Updated: 2024/11/20 11:33:32 by didimitr         ###   ########.fr       */
+/*   Updated: 2024/11/21 11:28:59 by adimik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_d(long long n)
+int	ft_print_d(int n)
 {
 	int	i;
 
 	i = 0;
+	if (n == -2147483648)
+	{
+		i += write(1, "-2", 2);
+		n = 147483648;
+	}
 	if (n < 0)
 	{
 		i += write(1, "-", 1);

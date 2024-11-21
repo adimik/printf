@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: didimitr <didimitr@student.42luxembourg    +#+  +:+       +#+        */
+/*   By: adimik <adimik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 11:30:11 by didimitr          #+#    #+#             */
-/*   Updated: 2024/11/20 13:24:07 by didimitr         ###   ########.fr       */
+/*   Updated: 2024/11/21 13:19:23 by adimik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 # include <stdarg.h>
 # include <stdio.h>
 
-int	ft_print_d(long long n);
+int	ft_print_d(int n);
 int ft_print_c(int c);
 int	ft_print_s(char *c);
-int	ft_print_x(long n);
+int	ft_print_x(unsigned long int n);
 int	ft_print_X(long n);
 int	ft_print_p(void *p);
 int	ft_print_u(unsigned int i);

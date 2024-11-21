@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_X.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: didimitr <didimitr@student.42luxembourg    +#+  +:+       +#+        */
+/*   By: adimik <adimik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 11:38:31 by didimitr          #+#    #+#             */
-/*   Updated: 2024/11/20 11:39:03 by didimitr         ###   ########.fr       */
+/*   Updated: 2024/11/21 12:03:06 by adimik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_print_X(long n)
 		i += ft_print_c('-');
 		n = -n;	
 	}
-	if (n < 17)
+	if (n < 16)
 		i += ft_print_c(symbols[n]);
 	else
 	{

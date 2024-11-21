@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_p.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: didimitr <didimitr@student.42luxembourg    +#+  +:+       +#+        */
+/*   By: adimik <adimik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 11:39:33 by didimitr          #+#    #+#             */
-/*   Updated: 2024/11/20 11:39:54 by didimitr         ###   ########.fr       */
+/*   Updated: 2024/11/21 12:48:59 by adimik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 int	ft_print_p(void *p)
 {
-	long	i;
+	unsigned long int	i;
 
-	i = (long)p;
+	i = (unsigned long int)p;
+	if (!p)
+		return (ft_print_s("(nil)"));
 	ft_print_s("0x");
 	return(ft_print_x(i) + 2);
 }

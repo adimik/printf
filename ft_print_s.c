@@ -6,7 +6,7 @@
 /*   By: adimik <adimik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 11:35:28 by didimitr          #+#    #+#             */
-/*   Updated: 2024/11/21 12:08:57 by adimik           ###   ########.fr       */
+/*   Updated: 2025/01/07 10:11:10 by adimik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ int	ft_print_s(char *c)
 	int	i;
 
 	i = 0;
-	if(!c)
-		return(ft_print_s("(null)"));
-	while(*c)
+	if (!c)
+		return (ft_print_s("(null)"));
+	while (*c)
 	{
 		i += write(1, c, 1);
 		c++;

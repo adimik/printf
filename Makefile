@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: didimitr <didimitr@student.42luxembourg    +#+  +:+       +#+         #
+#    By: adimik <adimik@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/20 11:44:59 by didimitr          #+#    #+#              #
-#    Updated: 2024/11/20 13:26:09 by didimitr         ###   ########.fr        #
+#    Updated: 2025/01/07 10:49:10 by adimik           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ $(NAME) : $(OBJS)
 clean:
 	rm -f $(OBJS)
 
-fclean:
+fclean: clean
 	rm -f $(NAME) ft_printf.so
 
 re: fclean all

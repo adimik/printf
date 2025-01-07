@@ -20,5 +20,5 @@ int	ft_print_p(void *p)
 	if (!p)
 		return (ft_print_s("(nil)"));
 	ft_print_s("0x");
-	return(ft_print_x(i) + 2);
+	return (ft_print_x(i) + 2);
 }

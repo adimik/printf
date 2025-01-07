@@ -33,8 +33,8 @@ int	ft_print_d(int n)
 	}
 	else
 	{
-		i +=ft_print_d(n / 10);
-		i +=ft_print_d(n % 10);
+		i += ft_print_d(n / 10);
+		i += ft_print_d(n % 10);
 	}
-	return(i);
+	return (i);
 }

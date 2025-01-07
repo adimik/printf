@@ -14,7 +14,7 @@
 
 int	ft_print_u(unsigned int i)
 {
-	int c;
+	int	c;
 
 	c = 0;
 	if (i < 10)
@@ -24,5 +24,5 @@ int	ft_print_u(unsigned int i)
 		c += ft_print_u(i / 10);
 		c += ft_print_u(i % 10);
 	}
-	return(c);
+	return (c);
 }
